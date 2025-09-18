@@ -1,11 +1,19 @@
-let inputNumber = 1;
-let dividePrevious = 0;
-if (inputNumber < 1){
+let inputNumber = 11;
+let i = 0;
+if (inputNumber < 1) {
   console.log('false');
-} else if (inputNumber === 1){
+} else if (inputNumber === 1) {
   console.log('true');
 } else if (Number.isInteger) {
-  for (let i = 0; i <= inputNumber;i++){
-    
+  for (i = 2; i <= inputNumber; i++) {
+    if (inputNumber % i === 0 && i === inputNumber) {
+      break;
+    }
+  }
+
+  if (i === inputNumber) {
+    console.log(inputNumber + ' is Prime');
+  } else {
+    console.log(inputNumber + ' is not Prime');
   }
 }
