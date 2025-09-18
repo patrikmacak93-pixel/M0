@@ -1,4 +1,4 @@
-let inputNumber = 11;
+let inputNumber = 6;
 let i = 0;
 if (inputNumber < 1) {
   console.log('false');
@@ -6,7 +6,7 @@ if (inputNumber < 1) {
   console.log('true');
 } else if (Number.isInteger) {
   for (i = 2; i <= inputNumber; i++) {
-    if (inputNumber % i === 0 && i === inputNumber) {
+    if (inputNumber % i === 0) {
       break;
     }
   }
